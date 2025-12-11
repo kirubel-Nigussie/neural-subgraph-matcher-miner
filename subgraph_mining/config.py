@@ -39,6 +39,7 @@ def parse_decoder(parser):
     dec_parser.add_argument('--memory_efficient', action='store_true',
         help='Use memory efficient search for large graphs')
     # Beam search parameter
+    # parser.add_argument('--beam_width', type=int, default=20,
     parser.add_argument('--beam_width', type=int, default=5,
                         help='Width of beam for beam search')
     # Output and analysis
@@ -64,23 +65,29 @@ def parse_decoder(parser):
         # Dataset defaults
         dataset="enzymes",
         batch_size=1000,
-        
-        # Decoder defaults
+
+
+     # Decoder defaults
         out_path="results/out-patterns.p",
         n_neighborhoods=100,
-        n_trials=100,
+        n_trials=100,             # CHANGED: Increased from 10 to 100
         decode_thresh=0.5,
-        radius=3,
+        radius=4,                 # CHANGED: Increased from 3 to 4
         subgraph_sample_size=0,
         sample_method="tree",
         skip="learnable",
-        graph_type="directed",
+        graph_type="undirected",
         min_pattern_size=3,
-        max_pattern_size=5,
+        max_pattern_size=8,       # CHANGED: Increased from 5 to 8
         min_neighborhood_size=2,
         max_neighborhood_size=3,
-        search_strategy="greedy",
-        out_batch_size=3,
+        search_strategy="mcts",   # CHANGED: Default to the best strategy
+        out_batch_size=5,         # CHANGED: Increased from 3 to 5
         node_anchored=True,
-        memory_limit=1000000
+        memory_limit=1000000,
+        beam_width=15     
+
+      
+
     )
+     

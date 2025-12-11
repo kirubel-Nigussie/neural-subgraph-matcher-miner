@@ -4,10 +4,10 @@ log/
 log-*/
 *.p
 *.png
-plots/
-data/
+# plots/
+# data/
 runs/
-results/
+# results/
 *.sw?
 orca/
 core

@@ -1,0 +1,43 @@
+[
+  {
+    "nodes": [
+      {
+        "id": "24944",
+        "label": "",
+        "anchor": 1
+      },
+      {
+        "id": "11612",
+        "label": "",
+        "anchor": 0
+      },
+      {
+        "id": "1653",
+        "label": "",
+        "anchor": 0
+      }
+    ],
+    "edges": [
+      {
+        "source": "24944",
+        "target": "1653",
+        "type": ""
+      },
+      {
+        "source": "24944",
+        "target": "11612",
+        "type": ""
+      },
+      {
+        "source": "11612",
+        "target": "1653",
+        "type": ""
+      }
+    ],
+    "metadata": {
+      "num_nodes": 3,
+      "num_edges": 3,
+      "is_directed": false
+    }
+  }
+]
