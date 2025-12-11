@@ -205,8 +205,6 @@ echo "Log saved to logs/mcts.log"
 echo "Plots saved to plots/cluster/mcts/"
 echo "Results saved to results/mcts/"
 
-
-
 # 3. Beam Search
 echo ""
 echo "[3/3] Running BEAM Search..."
